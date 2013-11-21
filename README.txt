@@ -1,1 +1,1 @@
-Sexy Dialog is a Chromium extension that makes JavaScript alert(), confirm() & prompt() more visually appealing
+Sexy Dialog is a Chromium extension that makes JavaScript alert(), confirm() & prompt() visually more appealing
