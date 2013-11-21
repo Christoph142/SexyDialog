@@ -1,0 +1,86 @@
+dialog#sexy_dialog {
+	color:#333;
+	background:#FFF;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	padding:0;
+	
+	animation:show_moved 200ms;
+	-webkit-animation:show_moved 200ms;
+}
+
+dialog#sexy_dialog::backdrop {
+	transition-duration:200ms;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	
+	animation:show 200ms;
+	-webkit-animation:show 200ms;
+}
+
+@keyframes show_moved {
+	from {opacity:0; -webkit-transform:translateY(-20px); }
+	to {opacity:1; -webkit-transform:translateY(0); }
+}
+
+@-webkit-keyframes show_moved {
+	from {opacity:0; -webkit-transform:translateY(-20px); }
+	to {opacity:1; -webkit-transform:translateY(0); }
+}
+
+@keyframes show {
+	from {opacity:0; }
+	to {opacity:1; }
+}
+
+@-webkit-keyframes show {
+	from {opacity:0; }
+	to {opacity:1; }
+}
+
+dialog#sexy_dialog #sexy_close_button {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	height: 14px;
+	width: 14px;
+	border-radius:2px;
+}
+dialog#sexy_dialog #sexy_close_button::before{
+	position:relative;
+	left:4px;
+	bottom:3px;
+	content:"x";
+}
+dialog#sexy_dialog #sexy_close_button:hover{
+	text-shadow:0 0 1px #333;
+	color:#FFF;
+	background:#AAA;	
+}
+
+dialog#sexy_dialog .sexy_content_area{
+	padding:26px;
+}
+
+dialog#sexy_dialog .sexy_action_area {
+	text-align:right;
+	background: rgb(247, 247, 247);
+	border-top: 1px solid rgb(222, 222, 222);
+	border-radius:0 0 4px 4px;
+	padding: 14px 26px;
+}
+
+dialog#sexy_dialog.close{
+	animation:show_moved 200ms reverse;
+	-webkit-animation:show_moved 200ms reverse;
+}
+
+dialog#sexy_dialog.close::backdrop{
+	animation:show 200ms reverse;
+	-webkit-animation:show 200ms reverse;
+}
