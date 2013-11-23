@@ -1,4 +1,9 @@
 dialog#sexy_dialog {
+	cursor:default;
+	font-family:'Segoe UI';
+	font-size:14px;
+	min-width:400px;
+	max-width:90%;
 	color:#333;
 	background:#FFF;
 	border: 1px solid rgba(0, 0, 0, 0.3);
@@ -44,6 +49,8 @@ dialog#sexy_dialog::backdrop {
 }
 
 dialog#sexy_dialog #sexy_close_button {
+	color:#AAA;
+	font-weight:bold;
 	position: absolute;
 	right: 8px;
 	top: 8px;
@@ -53,8 +60,8 @@ dialog#sexy_dialog #sexy_close_button {
 }
 dialog#sexy_dialog #sexy_close_button::before{
 	position:relative;
-	left:4px;
-	bottom:3px;
+	left:3.2px;
+	bottom:5.2px;
 	content:"x";
 }
 dialog#sexy_dialog #sexy_close_button:hover{
@@ -64,7 +71,8 @@ dialog#sexy_dialog #sexy_close_button:hover{
 }
 
 dialog#sexy_dialog .sexy_content_area{
-	padding:26px;
+	margin:26px 0 0 0;
+	padding:0 26px 26px 26px;
 }
 
 dialog#sexy_dialog .sexy_action_area {
