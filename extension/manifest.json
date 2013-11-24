@@ -10,10 +10,12 @@
 	[{
 		  "matches"		: ["<all_urls>"],
 		  "css"			: ["dialog.css"],
-		  "js"			: ["dialog.js"],
+		  "js"			: ["topFrame.js", "subFrames.js"],
 		  "run_at"		: "document_start",
 		  "all_frames"	: true
 	}],
+	
+	"background"		: {"scripts": ["communication.js"]},
 	
 	"manifest_version"	: 2
 }
