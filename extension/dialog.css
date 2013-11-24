@@ -32,7 +32,6 @@ dialog#sexy_dialog::backdrop {
 	from {opacity:0; -webkit-transform:translateY(-20px); }
 	to {opacity:1; -webkit-transform:translateY(0); }
 }
-
 @-webkit-keyframes show_moved {
 	from {opacity:0; -webkit-transform:translateY(-20px); }
 	to {opacity:1; -webkit-transform:translateY(0); }
@@ -42,7 +41,6 @@ dialog#sexy_dialog::backdrop {
 	from {opacity:0; }
 	to {opacity:1; }
 }
-
 @-webkit-keyframes show {
 	from {opacity:0; }
 	to {opacity:1; }
