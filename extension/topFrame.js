@@ -1,4 +1,4 @@
-if(window.top === window.self){  // topmost frames only:
+if(window.top === window.self && document.createElement("dialog").showModal !== undefined){ // topmost frames with required HTML5 support only:
 	
 	chrome.extension.onMessage.addListener( function(request){ // send requests from injected script to site context:
 		if		(request.event === "sexy_alert") window.dispatchEvent(new CustomEvent("sexy_alert", { "bubbles" : false, "detail" : request.text }));

@@ -1,4 +1,4 @@
-if(window.top !== window.self){ // subFrames only:
+if(window.top !== window.self && document.createElement("dialog").showModal !== undefined){ // subFrames with required HTML5 support only:
 	
 	// inline script:
 	function sexy_dialog_subFrame(){
