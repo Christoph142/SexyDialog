@@ -1,7 +1,7 @@
 {	
 	"name"				: "Sexy Dialog",
 	"developer"			: {"name" : "Christoph D."},
-	"homepage_url"		: "http://christoph142.wordpress.com",
+	"homepage_url"		: "https://christoph142.wordpress.com",
 	
 	"version"			: "1.0",
 	"icons"				: { "128" : "128.png" },
