@@ -17,5 +17,6 @@
 	
 	"background"		: {"scripts" : ["communication.js"], "persistent" : false},
 	
+	"offline_enabled"	: true,
 	"manifest_version"	: 2
 }
